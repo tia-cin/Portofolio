@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Link } from 'react-router-dom'
 
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -28,7 +27,7 @@ const Projects = () => {
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <a href='https://weather-app-tia-cin.vercel.app/' target='_blank'>
+                    <a href='https://weather-app-tia-cin.vercel.app/' target='_blank' rel="noreferrer">
                         <Button size="small">Ckeck it out</Button>
                     </a>
                 </CardActions>
