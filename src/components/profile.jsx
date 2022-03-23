@@ -9,13 +9,17 @@ let styledTitles = {
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    marginBottom: '5rem'
 }
 
 let container = {
     position: 'relative',
     maxHeigth: '100vw',
-    heigth: '100vw'
+    heigth: '100vw',
+    display: 'flex',
+    flexDirection: 'column',
+    margin: '10rem 0'
 }
 
 let styledAvatar = { 

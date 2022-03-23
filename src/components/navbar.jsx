@@ -9,7 +9,7 @@ let navbarStyle =  {
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-evenly',
-        margin: '1rem',
+        margin: '2rem',
         textDecoration: 'none',
 }
 
@@ -27,9 +27,6 @@ const Navbar = () => {
             </a>
             <a href='/projects'>
                 <WorkRoundedIcon/>
-            </a>
-            <a href='/contact'>
-                <ChatBubbleRoundedIcon/>
             </a>
         </div>
     )

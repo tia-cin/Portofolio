@@ -3,8 +3,8 @@ import * as React from 'react';
 let styledGrid = {
     display: 'grid',
     gridTemplateColumns: '1fr 1fr 1fr 1fr',
-    gridTemplateRows: '1fr 1fr 1fr 1fr', 
-    gap: '5em 10px',
+    gridTemplateRows: '1fr 1fr 1fr', 
+    gap: '8em 4em',
     gridTemplateAreas:`
     ". . . ."
     ". . . ."
@@ -12,7 +12,7 @@ let styledGrid = {
     alignItems: 'center',
     justifyItems: 'center',
     alignSelf: 'center',
-    verticalAlign: 'middle'
+    margin: '5rem 0'
 }
 
 let styledImg = {
@@ -24,7 +24,8 @@ let styledImg = {
     border: '5px solid',
     borderColor: 'white',
     backgroundColor: 'white',
-    borderRadius: '50%'
+    borderRadius: '50%',
+    textDecoration: 'none'
 }
 
 const Technologies = () => {

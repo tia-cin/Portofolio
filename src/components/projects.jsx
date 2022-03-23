@@ -13,9 +13,14 @@ let imgContainer2 = {
     marginTop: '1rem'
 }
 
+let container = {
+    ...styledContainer,
+    margin: '7rem 0'
+}
+
 const Projects = () => {
     return(
-        <div style={styledContainer} id='projects'>
+        <div style={container} id='projects'>
             <Card sx={{ maxWidth: 345, borderRadius: 10 }}>
                 <div style={imgContainer2}>
                     <img
