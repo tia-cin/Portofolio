@@ -1,33 +1,26 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom'
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import HubRoundedIcon from '@mui/icons-material/HubRounded';
 import WorkRoundedIcon from '@mui/icons-material/WorkRounded';
 import WorkspacePremiumRoundedIcon from '@mui/icons-material/WorkspacePremiumRounded';
-import ChatBubbleRoundedIcon from '@mui/icons-material/ChatBubbleRounded';
-
-let navbarStyle =  {
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'space-evenly',
-        margin: '2rem',
-        textDecoration: 'none',
-}
+import './styles/navbar.css'
 
 const Navbar = () => {
     return (
-        <div className='navbar-container' style={navbarStyle}>
-            <a href='/'>
+        <div className='navbarContainer'>
+            <Link to='/'>
                 <HomeRoundedIcon/>
-            </a>
-            <a href='/technologies'>
+            </Link>
+            <Link to='/technologies'>
                 <HubRoundedIcon/>
-            </a>
-            <a href='/skills'>
+            </Link>
+            <Link to='/skills'>
                 <WorkspacePremiumRoundedIcon/>
-            </a>
-            <a href='/projects'>
+            </Link>
+            <Link to='/projects'>
                 <WorkRoundedIcon/>
-            </a>
+            </Link>
         </div>
     )
 }

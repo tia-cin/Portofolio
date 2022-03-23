@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.container > a:hover {
+    color: #fff;
+    transition: 5s;
+    animation: hover 1s ease 0s 1 normal forwards;
+}
+
+@keyframes hover {
+    0% {
+      transform: scale(1);
+      transform-origin: 50% 100%;
+    }
+  
+    100% {
+      transform: scale(1.5);
+      transform-origin: 50% 100%;
+    }
+  }

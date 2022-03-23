@@ -1,0 +1,15 @@
+.navbarContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2rem;
+}
+.navbarContainer > a > svg {
+    width: 2rem;
+    height: 2rem;
+    color: black;
+}
+.navbarContainer > a > svg:hover {
+    transition: .5s;
+    color: white
+}

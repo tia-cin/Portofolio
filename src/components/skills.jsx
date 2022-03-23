@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { styledImg } from './technologies';
 import Typography from '@mui/material/Typography';
 import materialUi from './images/material-ui-logo (1).png'
 import bootstrap from './images/bootstrap.png'
@@ -10,85 +9,41 @@ import GroupsRoundedIcon from '@mui/icons-material/GroupsRounded';
 import LightbulbRoundedIcon from '@mui/icons-material/LightbulbRounded';
 import SentimentSatisfiedAltRoundedIcon from '@mui/icons-material/SentimentSatisfiedAltRounded';
 import BoltRoundedIcon from '@mui/icons-material/BoltRounded';
-
-let column = {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-evenly',
-    margin: '7rem 0'
-}
-
-let divider = {
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'space-evenly',
-}
-
-let skillContainer = {
-    borderRadius: 10,
-    backgroundColor: 'white',
-    width: 380,
-    padding: '1rem 1rem'
-}
-
-let styledContainer = {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-evenly',
-}
-
-let softskillContainer = {
-    borderRadius: 10,
-    backgroundColor: 'white',
-    width: 420,
-    margin: '3rem 1rem',
-    padding: '2rem 1rem' 
-}
-
-let softskill = {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-evenly'
-}
-
-let soft = {
-    display: 'flex',
-    flexDirection: 'column'
-}
+import './styles/skills.css'
 
 const Skills = () => {
     return (
-            <div style={column} id='skills'>
-                <div style={divider}>
-                    <div style={skillContainer}>
+            <div className='skillsContainer'>
+                <div className='design'>
+                    <div className='designContainer'>
                         <Typography variant="h5">Design Frameworks</Typography>
-                        <div style={styledContainer}>
-                            <div style={styledImg}>
+                        <div>
+                            <div>
                                 <a href='https://mui.com/' target="_blank" rel="noreferrer">
                                     <img src={materialUi} alt='material ui' width="70" height="70"/>
                                 </a>
                             </div>
-                            <div style={styledImg}>
+                            <div>
                                 <a href='https://getbootstrap.com/' target="_blank" rel="noreferrer">
                                     <img src={bootstrap} alt='bootstrap' width="90" height="90"/>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div style={skillContainer}>
+                    <div className='designContainer'>
                         <Typography variant="h5">Adobe Programs</Typography>
-                        <div style={styledContainer}>
-                            <div style={styledImg}>
+                        <div>
+                            <div>
                                 <a href='https://www.adobe.com/products/photoshop.html' target="_blank" rel="noreferrer">
                                     <img src={photoshop} alt='photoshop' width="70" height="70"/>
                                 </a>
                             </div>
-                            <div style={styledImg}>
+                            <div>
                                 <a href='https://www.adobe.com/products/illustrator/free-trial-download.html' target="_blank" rel="noreferrer">
                                     <img src={illustrator} alt='illustrator' width="80" height="80"/>
                                 </a>
                             </div>
-                            <div style={styledImg}>
+                            <div>
                                 <a href='https://www.adobe.com/products/premiere.html' target="_blank" rel="noreferrer">
                                     <img src={premiere} alt='premiere' width="70" height="70"/>
                                 </a>
@@ -96,11 +51,11 @@ const Skills = () => {
                         </div>
                     </div>
                 </div>
-                    <div style={softskillContainer}>
+                    <div className='softContainer'>
                         <Typography variant="h5">Soft Skills</Typography>
-                        <div style={softskill}>
-                            <div style={soft}>
-                                <div style={styledImg}>
+                        <div>
+                            <div>
+                                <div>
                                     <GroupsRoundedIcon fontSize='large'/>
                                 </div>
                                 <p>
@@ -109,13 +64,13 @@ const Skills = () => {
                                 </p>
                             </div>
                             <div>
-                                <div style={styledImg}>
+                                <div>
                                     <LightbulbRoundedIcon fontSize='large'/>
                                 </div>
                                 <p>Creative</p>
                             </div>
                             <div>
-                                <div style={styledImg}>
+                                <div>
                                     <SentimentSatisfiedAltRoundedIcon fontSize='large'/>
                                 </div>
                                 <p>
@@ -124,7 +79,7 @@ const Skills = () => {
                                 </p>
                             </div>
                             <div>
-                                <div style={styledImg}>
+                                <div>
                                     <BoltRoundedIcon fontSize='large'/>
                                 </div>
                                 <p>
@@ -139,4 +94,3 @@ const Skills = () => {
 }
 
 export default Skills
-export {styledContainer}

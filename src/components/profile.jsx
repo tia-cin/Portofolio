@@ -1,26 +1,9 @@
 import * as React from 'react';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
-import {Container} from '@mui/material'
 import profile from './images/cintia.jpg'
 import Social from './social';
-
-let styledTitles = {
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginBottom: '5rem'
-}
-
-let container = {
-    position: 'relative',
-    maxHeigth: '100vw',
-    heigth: '100vw',
-    display: 'flex',
-    flexDirection: 'column',
-    margin: '10rem 0'
-}
+import './styles/profile.css'
 
 let styledAvatar = { 
     width: '6em', 
@@ -31,9 +14,9 @@ let styledAvatar = {
 
 const Profile = () => {
     return(
-        <div style={container}>
-            <Container style={styledTitles}>
-                <div>
+        <div className='profileContainer'>
+            <div className='titlesContainer'>
+                <div className='titles'>
                     <Typography variant="h1" >
                         Hi, I'm Cintia
                     </Typography>
@@ -46,9 +29,10 @@ const Profile = () => {
                         alt="Cintia Arce" 
                         src={profile}
                         sx={styledAvatar} 
+                        className='shadow'
                     />
                 </div>
-            </Container>
+            </div>
             <Social/>
         </div>
         
