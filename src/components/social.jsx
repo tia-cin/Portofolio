@@ -1,8 +1,8 @@
 import * as React from 'react';
-
+import { styledContainer } from './skills';
 const Social = () => {
     return (
-        <div>
+        <div id='contact' style={styledContainer}>
             <a href='https://linkedin.com/in/cintia-arce-profile'>
                 <img src='https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Linkedin2_svg-128.png' alt='linkedin' width='50' height='50'/>
             </a>

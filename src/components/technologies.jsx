@@ -1,16 +1,18 @@
 import * as React from 'react';
 
-let styledContainer = {
+let styledGrid = {
     display: 'grid',
-    gridTemplateColumns: '1fr 1fr 1fr',
-    gridTemplateRows: '1fr 1fr 1fr', 
+    gridTemplateColumns: '1fr 1fr 1fr 1fr',
+    gridTemplateRows: '1fr 1fr 1fr 1fr', 
     gap: '5em 10px',
     gridTemplateAreas:`
-    ". . ."
-    ". . ."
-    ". . ."`,
+    ". . . ."
+    ". . . ."
+    ". . . ."`,
     alignItems: 'center',
-    justifyItems: 'center'
+    justifyItems: 'center',
+    alignSelf: 'center',
+    verticalAlign: 'middle'
 }
 
 let styledImg = {
@@ -27,7 +29,7 @@ let styledImg = {
 
 const Technologies = () => {
     return (
-        <div style={styledContainer}>
+        <div style={styledGrid} id='technologies'>
             <div style={styledImg}>
                 <a  href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> 
                     <img  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="70" height="70"/> 
@@ -94,3 +96,4 @@ const Technologies = () => {
 }
 
 export default Technologies
+export {styledImg}

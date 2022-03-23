@@ -1,20 +1,36 @@
 import * as React from 'react';
-import Button from '@mui/material/Button';
+import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
+import HubRoundedIcon from '@mui/icons-material/HubRounded';
+import WorkRoundedIcon from '@mui/icons-material/WorkRounded';
+import WorkspacePremiumRoundedIcon from '@mui/icons-material/WorkspacePremiumRounded';
+import ChatBubbleRoundedIcon from '@mui/icons-material/ChatBubbleRounded';
 
 let navbarStyle =  {
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-evenly',
         margin: '1rem',
+        textDecoration: 'none',
 }
 
 const Navbar = () => {
     return (
         <div className='navbar-container' style={navbarStyle}>
-            <Button variant="text">Home</Button>
-            <Button variant="text">Skills</Button>
-            <Button variant="text">Projects</Button>
-            <Button variant="text">Contact</Button>
+            <a href='/'>
+                <HomeRoundedIcon/>
+            </a>
+            <a href='/technologies'>
+                <HubRoundedIcon/>
+            </a>
+            <a href='/skills'>
+                <WorkspacePremiumRoundedIcon/>
+            </a>
+            <a href='/projects'>
+                <WorkRoundedIcon/>
+            </a>
+            <a href='/contact'>
+                <ChatBubbleRoundedIcon/>
+            </a>
         </div>
     )
 }
