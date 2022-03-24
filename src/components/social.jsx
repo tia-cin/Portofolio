@@ -12,7 +12,7 @@ const Social = () => {
             <a href='mailto:cintiaayelenarce@gmail.com'>
                 <img src='https://cdn4.iconfinder.com/data/icons/glyphs/24/icons_email-256.png' alt='mail' width='50' height='50'/>
             </a>
-            <a href='C:/Users/cinti/OneDrive/Documents/Programming/Cintia Arce CV.pdf' download>
+            <a href='C:/Users/cinti/OneDrive/Documents/Programming/Cintia Arce Resume.pdf' download>
                 <img src='https://cdn3.iconfinder.com/data/icons/resume-solid-essential/512/Experience_briefcase-256.png' alt='resume' width='50' heigth='50' />
             </a>
         </div>
