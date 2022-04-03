@@ -8,7 +8,7 @@ import './styles/projects.css'
 const Projects = () => {
     return(
         <div className='projectsContainer'>
-            <Link to='https://weather-app-tia-cin.vercel.app/'>
+            <a href='https://weather-app-tia-cin.vercel.app/'>
                 <Card sx={{ maxWidth: 345, borderRadius: 10 }}>
                     <div className='img1'>
                         <img
@@ -27,8 +27,8 @@ const Projects = () => {
                         </Typography>
                     </CardContent>
                 </Card>
-            </Link>
-            <Link to='https://deploy-client-kappa.vercel.app/'>
+            </a>
+            <a href='https://deploy-client-kappa.vercel.app/'>
                 <Card sx={{ maxWidth: 345, borderRadius: 10 }}>
                     <div className='img2'>
                         <svg width="80" height="80" viewBox="0 0 140 154" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -45,7 +45,7 @@ const Projects = () => {
                         </Typography>
                     </CardContent>
                 </Card>
-            </Link>
+            </a>
         </div>       
     )
 }
