@@ -33,7 +33,7 @@ const projects = [
                 img: {
                     src: img,
                     alt: 'mangaka-icon',
-                    widthandheigh: '100'
+                    widthandheigh: '80'
                 }
             },
             cardComponent: {
