@@ -27,9 +27,9 @@
     align-items: center;
 }
 
-.designContainer > div > div {
+/* .designContainer > div > div {
     animation: entrance 1s ease-in-out 0s 1 normal forwards;
-}
+} */
 
 .softContainer {
     border-radius: 10px;
@@ -48,7 +48,7 @@
 
 .softContainer > div > div {
     flex-direction: column;
-    animation: entrance 1s ease-in-out 0s 1 normal forwards;
+    /* animation: entrance 1s ease-in-out 0s 1 normal forwards; */
 }
 
 @keyframes entrance {

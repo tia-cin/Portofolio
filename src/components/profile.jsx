@@ -2,7 +2,6 @@ import * as React from 'react';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
 import profile from './images/cintia.jpg'
-import Social from './social';
 import './styles/profile.css'
 
 let styledAvatar = { 
@@ -39,7 +38,6 @@ const Profile = () => {
                     />
                 </div>
             </div>
-            <Social/>
         </div>
         
     )
