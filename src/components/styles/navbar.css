@@ -3,14 +3,33 @@
     flex-direction: row;
     justify-content: space-evenly;
     padding: 2rem;
-    border: .2em solid white;
 }
+
+
 .navbarContainer > a > svg {
-    width: 2rem;
-    height: 2rem;
+    width: 5rem;
+    height: 5rem;
     color: black;
 }
 .navbarContainer > a > svg:hover {
     transition: .5s;
     color: white
+}
+.list-item-container {
+    display: flex;
+    flex-direction: row;
+}
+.link-item {
+    list-style: none;
+}
+.link-btn {
+    background-color: transparent;
+    border: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .navbarContainer > a > svg {
+        width: 10rem;
+        height: 10rem;
+    }
 }

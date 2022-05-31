@@ -52,3 +52,24 @@
       transform-origin: 0% 50%;
     }
   }
+
+@media only screen and (max-width: 1000px) {
+  .titlesContainer {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .avatar-container {
+    display: none;
+  }
+  .strong-title {
+    animation: color-animation 10s linear infinite;
+  }
+}
+
+@keyframes color-animation {
+  0%    {color: #291b25}
+  25%   {color: #f6f6e9}
+  50%   {color: #291b25}
+  75%   {color: #f6f6e9}
+  100%  {color: #291b25} 
+}

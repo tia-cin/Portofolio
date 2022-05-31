@@ -18,13 +18,19 @@ const Profile = () => {
             <div className='titlesContainer'>
                 <div className='titles'>
                     <Typography variant="h1" >
-                        Hi, I'm Cintia
+                        Hi, 
+                        <strong className='strong-title'>
+                            I'm Cintia
+                        </strong>
                     </Typography>
                     <Typography variant="h3" >
-                        a Full Stack Web Developer
+                        a Full Stack Web 
+                        <strong className='strong-title'>
+                            Developer
+                        </strong>
                     </Typography>
                 </div>
-                <div>
+                <div className='avatar-container'>
                     <Avatar 
                         alt="Cintia Arce" 
                         src={profile}

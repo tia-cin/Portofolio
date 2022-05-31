@@ -3,24 +3,12 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-    background: linear-gradient(270deg, #ff7477, #e69597, #ceb5b7, #b5d6d6, #9cf6f6);
+    background: linear-gradient(270deg, #e16539, #51abb2, #f0dfc8, #ffb1a5, #ffce6d);
     background-size: 1000% 1000%;
-  
-    -webkit-animation: AnimationName 30s ease infinite;
-    -moz-animation: AnimationName 30s ease infinite;
-    animation: AnimationName 30s ease infinite;
+    animation: AnimationName 10s ease infinite;
 }
 
-@-webkit-keyframes AnimationName {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-@-moz-keyframes AnimationName {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
+
 @keyframes AnimationName {
   0%{background-position:0% 50%}
   50%{background-position:100% 50%}

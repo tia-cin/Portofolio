@@ -7,21 +7,40 @@ import WorkspacePremiumRoundedIcon from '@mui/icons-material/WorkspacePremiumRou
 import './styles/navbar.css'
 
 const Navbar = () => {
+
     return (
-        <div className='navbarContainer'>
-            <Link to='/'>
-                <HomeRoundedIcon/>
-            </Link>
-            <Link to='/technologies'>
-                <HubRoundedIcon/>
-            </Link>
-            <Link to='/skills'>
-                <WorkspacePremiumRoundedIcon/>
-            </Link>
-            <Link to='/projects'>
-                <WorkRoundedIcon/>
-            </Link>
-        </div>
+        <nav className='navbarContainer'>
+            <ul className='list-item-container'>
+                <li className='link-item'>
+                    <Link to='/'>
+                        <button className='link-btn'>
+                            <HomeRoundedIcon/>
+                        </button>
+                    </Link>
+                </li>
+                <li className='link-item'>
+                    <Link to='/technologies'>
+                        <button className='link-btn'>
+                            <HubRoundedIcon/>
+                        </button>
+                    </Link>
+                </li>
+                <li className='link-item'>
+                    <Link to='/skills'>
+                        <button className='link-btn'>
+                            <WorkspacePremiumRoundedIcon/>
+                        </button>
+                    </Link>
+                </li>
+                <li className='link-item'>
+                    <Link to='/projects'>
+                        <button className='link-btn'>
+                            <WorkRoundedIcon/>
+                        </button>
+                    </Link>
+                </li>
+            </ul>
+        </nav>
     )
 }
 
