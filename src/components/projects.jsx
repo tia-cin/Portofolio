@@ -76,6 +76,7 @@ const Projects = () => {
                                         alt={p.card.div.img.alt}
                                         width={p.card.div.img.widthandheigh}
                                         height={p.card.div.img.widthandheigh}
+                                        className='image'
                                     />
                                 </div>
                                 <CardContent>

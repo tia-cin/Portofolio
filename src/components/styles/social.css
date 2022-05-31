@@ -1,11 +1,11 @@
 .footer-container {
-  background-color: #51ABB2;
+  background: center center/cover no-repeat url('../svgs/wave\ \(4\).svg');
   padding: 2em 0;
   position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 100px;
-    width: 100%;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
 }
 .social-container {
     display: flex;
