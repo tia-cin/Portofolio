@@ -13,6 +13,7 @@ import './styles/skills.css'
 
 const Skills = () => {
     return (
+        <div>
             <div className='skillsContainer'>
                 <div className='design'>
                     <div className='designContainer'>
@@ -51,7 +52,7 @@ const Skills = () => {
                         </div>
                     </div>
                 </div>
-                    <div className='softContainer'>
+                <div className='softContainer'>
                         <Typography variant="h5">Soft Skills</Typography>
                         <div>
                             <div>
@@ -88,8 +89,10 @@ const Skills = () => {
                                 </p>
                             </div>
                         </div>
-                    </div>
-                </div>        
+                </div>
+            </div>        
+                
+        </div>
     )
 }
 

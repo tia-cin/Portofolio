@@ -25,7 +25,7 @@ const social = [
 
 const Social = () => {
     return (
-        <div className='container'>
+        <div className='social-container'>
             {
                 social.length && social.map((s,i) => {
                     return (

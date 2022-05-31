@@ -1,9 +1,8 @@
-.container {
+.social-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    margin: 5em 0;
 }
 .container > a:hover {
     color: #fff;
