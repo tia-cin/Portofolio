@@ -1,5 +1,6 @@
 .gridContainer {
     display: grid;
+    height: 100%;
     grid-template-columns: .5fr .5fr .5fr .5fr;
     grid-template-columns: .5fr .5fr .5fr .5fr;
     gap: 4em .5em;
@@ -14,12 +15,13 @@
     /* animation: entrance 1s ease-in-out 0s 1 normal forwards; */
 }
 
-.gridContainer > div {
+.grid-item {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 5em;
     height:5em;
+    padding: 1em;
     border: 5px solid;
     border-color: white;
     background-color: white;
@@ -30,6 +32,7 @@
   background-color: #291b25;
   transition: .5s;
   border-color: #291b25;
+  color: #fff
 }
 
 @keyframes entrance {
@@ -41,5 +44,18 @@
     100% {
       opacity: 1;
       transform: scale(1);
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .gridContainer {
+      display: grid;
+      grid-template-columns: .3fr .3fr;
+      gap:  1em;
+      grid-template-areas:
+      ". ."
+      ". ."
+      ". .";
+      justify-content: center;
     }
 }

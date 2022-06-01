@@ -28,7 +28,7 @@ const technologies = [
     },
     {
         href: 'https://redux.js.org/',
-        src: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fraw.githubusercontent.com%2Freduxjs%2Fredux%2Fmaster%2Flogo%2Flogo.png&f=1&nofb=1',
+        src: 'https://www.svgrepo.com/show/303557/redux-logo.svg',
         alt: 'redux',
         wandh: '70'
     },
@@ -82,9 +82,9 @@ const Technologies = () => {
             {
                 technologies.length && technologies.map((t,i) => {
                     return (
-                        <div key={i}>
+                        <div key={i} className='grid-item'>
                             <a href={t.href} target='_blank' rel='noreferrer'>
-                                <img src={t.src} width={t.wandh} height={t.wandh} alt={t.alt}/>
+                                <img src={t.src} width={t.wandh} height={t.wandh} alt={t.alt} className='tech-logo'/>
                             </a>
                         </div>
                     )

@@ -9,7 +9,7 @@ const projects = [
     {
         link: 'https://weather-app-tia-cin.vercel.app/',
         card: {
-            sx: { width: '20em', borderRadius: 10 },
+            sx: { width: '20em', borderRadius: 10, m: '1.5em' },
             div: {
                 class: 'img1',
                 img: {
@@ -27,7 +27,7 @@ const projects = [
     {
         link: 'https://deploy-client-kappa.vercel.app/',
         card: {
-            sx: { width: '20em', borderRadius: 10 },
+            sx: { width: '20em', borderRadius: 10, m: '1.5em' },
             div: {
                 class: 'img2',
                 img: {
@@ -45,7 +45,7 @@ const projects = [
     {
         link: 'https://music-app-self.vercel.app',
         card: {
-            sx: { width: '20em', borderRadius: 10 },
+            sx: { width: '20em', borderRadius: 10, m: '1.5em' },
             div: {
                 class: 'img3',
                 img: {
@@ -68,7 +68,7 @@ const Projects = () => {
             {
                 projects.length && projects.map((p, i) => {
                     return (
-                        <a href={p.link} key={i}>
+                        <a href={p.link} key={i} className='project-item'>
                             <Card sx={p.card.sx}>
                                 <div className={p.card.div.class}>
                                     <img 
@@ -80,12 +80,12 @@ const Projects = () => {
                                     />
                                 </div>
                                 <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div">
+                                    <h5 className='project-title'>
                                         {p.card.cardComponent.title}
-                                    </Typography>
-                                    <Typography variant="body2" color="text.secondary">
+                                    </h5>
+                                    <span className='project-description'>
                                         {p.card.cardComponent.description}
-                                    </Typography>
+                                    </span>
                                 </CardContent>
                             </Card>
                         </a>

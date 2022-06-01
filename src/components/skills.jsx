@@ -17,7 +17,7 @@ const Skills = () => {
             <div className='skillsContainer'>
                 <div className='design'>
                     <div className='designContainer'>
-                        <Typography variant="h5">Design Frameworks</Typography>
+                        <h5 className='sub-title'>Design Frameworks</h5>
                         <div>
                             <div>
                                 <a href='https://mui.com/' target="_blank" rel="noreferrer">
@@ -32,7 +32,7 @@ const Skills = () => {
                         </div>
                     </div>
                     <div className='designContainer'>
-                        <Typography variant="h5">Adobe Programs</Typography>
+                        <h5 className='sub-title'>Adobe Programs</h5>
                         <div>
                             <div>
                                 <a href='https://www.adobe.com/products/photoshop.html' target="_blank" rel="noreferrer">
@@ -53,13 +53,13 @@ const Skills = () => {
                     </div>
                 </div>
                 <div className='softContainer'>
-                        <Typography variant="h5">Soft Skills</Typography>
+                        <h5 className='sub-title'>Soft Skills</h5>
                         <div>
                             <div>
                                 <div>
                                     <GroupsRoundedIcon fontSize='large'/>
                                 </div>
-                                <p>
+                                <p className='skill-description'>
                                     Team <br/>
                                     Player
                                 </p>
@@ -68,13 +68,13 @@ const Skills = () => {
                                 <div>
                                     <LightbulbRoundedIcon fontSize='large'/>
                                 </div>
-                                <p>Creative</p>
+                                <p className='skill-description'>Creative</p>
                             </div>
                             <div>
                                 <div>
                                     <SentimentSatisfiedAltRoundedIcon fontSize='large'/>
                                 </div>
-                                <p>
+                                <p className='skill-description'>
                                     Positive <br/>
                                     Attitude
                                 </p>
@@ -83,7 +83,7 @@ const Skills = () => {
                                 <div>
                                     <BoltRoundedIcon fontSize='large'/>
                                 </div>
-                                <p>
+                                <p className='skill-description'>
                                     Fast <br/>
                                     Learner
                                 </p>

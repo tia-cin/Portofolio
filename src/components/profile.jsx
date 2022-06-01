@@ -1,12 +1,11 @@
 import * as React from 'react';
 import Avatar from '@mui/material/Avatar';
-import Typography from '@mui/material/Typography';
 import profile from './images/cintia.jpg'
 import './styles/profile.css'
 
 let styledAvatar = { 
-    width: '6em', 
-    height: '6em',
+    width: '9em', 
+    height: '9em',
     border: '5px solid',
     borderColor: 'white'
 }
@@ -15,27 +14,31 @@ const Profile = () => {
     return(
         <div className='profileContainer'>
             <div className='titlesContainer'>
-                <div className='titles'>
-                    <Typography variant="h1" >
-                        Hi, 
-                        <strong className='strong-title'>
-                            I'm Cintia
-                        </strong>
-                    </Typography>
-                    <Typography variant="h3" >
-                        a Full Stack Web 
-                        <strong className='strong-title'>
-                            Developer
-                        </strong>
-                    </Typography>
-                </div>
-                <div className='avatar-container'>
+                {/* <div className='avatar-container'>
                     <Avatar 
                         alt="Cintia Arce" 
                         src={profile}
                         sx={styledAvatar} 
                         className='shadow'
                     />
+                </div> */}
+                <div className='titles'>
+                    <div className='title-dev'>
+                        <h1 className='title'>
+                            Hi,  
+                        </h1>
+                        <h1 className='title special-title'>
+                            I'm Cintia
+                        </h1>    
+                    </div>
+                    <div className='title-dev'>
+                        <h1 className='title'>
+                            a Full Stack  
+                        </h1>
+                        <h1 className='title special-title'>
+                            Developer
+                        </h1>         
+                    </div>
                 </div>
             </div>
         </div>
