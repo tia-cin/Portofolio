@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Typography from '@mui/material/Typography';
 import materialUi from './images/material-ui-logo (1).png'
 import bootstrap from './images/bootstrap.png'
 import photoshop from './images/photoshop.png'
@@ -54,7 +53,7 @@ const Skills = () => {
                 </div>
                 <div className='softContainer'>
                         <h5 className='sub-title'>Soft Skills</h5>
-                        <div>
+                        <div className='icons-container'>
                             <div>
                                 <div>
                                     <GroupsRoundedIcon fontSize='large'/>

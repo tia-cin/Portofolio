@@ -1,6 +1,4 @@
 import * as React from 'react';
-import Avatar from '@mui/material/Avatar';
-import profile from './images/cintia.jpg'
 import './styles/profile.css'
 
 let styledAvatar = { 
@@ -14,14 +12,6 @@ const Profile = () => {
     return(
         <div className='profileContainer'>
             <div className='titlesContainer'>
-                {/* <div className='avatar-container'>
-                    <Avatar 
-                        alt="Cintia Arce" 
-                        src={profile}
-                        sx={styledAvatar} 
-                        className='shadow'
-                    />
-                </div> */}
                 <div className='titles'>
                     <div className='title-dev'>
                         <h1 className='title'>

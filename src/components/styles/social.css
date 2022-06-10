@@ -1,10 +1,8 @@
 .footer-container {
   background: center center/cover no-repeat url('../svgs/wave\ \(4\).svg');
-  margin-top: 2em;
-  position: absolute;
-  left: 0;
+  margin-top: 5em;
   bottom: 0;
-  height: 150px;
+  height: 200px;
   width: 100%;
 }
 .social-container {
