@@ -7,7 +7,7 @@ import img from './images/mangaca-icon.png'
 
 const projects = [
     {
-        link: 'https://weather-app-tia-cin.vercel.app/',
+        link: 'https://weather-app-tia-cin.vercel.app',
         card: {
             sx: { width: '20em', borderRadius: 10, m: '1.5em' },
             div: {
