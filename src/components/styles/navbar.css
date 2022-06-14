@@ -4,6 +4,10 @@
     flex-direction: column;
     height: 220px;
     padding: 2em;
+    padding-bottom: .5em;
+}
+.nav-list-container {
+    margin: 0;
 }
 .list-item-container {
     display: flex;

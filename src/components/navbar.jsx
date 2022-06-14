@@ -10,7 +10,7 @@ const Navbar = () => {
 
     return (
         <nav className='navbar-container'>
-            <div className='list-container'>
+            <div className='nav-list-container'>
                 <ul className='list-item-container'>
                     <li className='link-item'>
                         <Link to='/'>

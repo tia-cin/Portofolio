@@ -26,19 +26,23 @@ const social = [
 const Social = () => {
     return (
         <footer className='footer-container'>
-            <div className='social-container'>
-                {
-                    social.length && social.map((s,i) => {
-                        return (
-                            <a href={s.link} key={i} className='social-item'> 
-                                <img src={s.src} alt={s.alt} width={s.wh} height={s.wh}/>
-                            </a>
-                        )
-                    })
-                }
-                <a href={cv} download className='social-item'>
-                    <img src='https://cdn3.iconfinder.com/data/icons/resume-solid-essential/512/Experience_briefcase-256.png' alt='resume' width='60' heigth='60' />
-                </a>
+            <div className='list-container'>
+                <ul className='social-container'>
+                    {
+                        social.length && social.map((s,i) => {
+                            return (
+                                <a href={s.link} key={i}> 
+                                    <li className='social-item'>
+                                        <img src={s.src} alt={s.alt} width={s.wh} height={s.wh}/>
+                                    </li>
+                                </a>
+                            )
+                        })
+                    }
+                    <a href={cv} download className='social-item'>
+                        <img src='https://cdn3.iconfinder.com/data/icons/resume-solid-essential/512/Experience_briefcase-256.png' alt='resume' width='60' heigth='60' />
+                    </a>
+                </ul>
             </div>
         </footer>
     )

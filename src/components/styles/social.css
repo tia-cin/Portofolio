@@ -1,9 +1,12 @@
 .footer-container {
   background: center center/cover no-repeat url('../svgs/wave\ \(4\).svg');
-  margin-top: 5em;
+  padding-top: .5em;
   bottom: 0;
   height: 200px;
   width: 100%;
+}
+.list-container {
+  margin: 5em 0;
 }
 .social-container {
     display: flex;
@@ -12,7 +15,7 @@
     align-items: center;
 }
 .social-item {
-  z-index: 1;
+  list-style: none;
 }
 .social-item:hover {
     transition: 5s;

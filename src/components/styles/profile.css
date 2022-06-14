@@ -3,6 +3,7 @@
     max-width: 100vw;
     display: flex;
     flex-direction: column;
+    margin: 1em 0;
 }
 
 .titlesContainer {
@@ -64,21 +65,21 @@
 
 
 @keyframes color-animation {
-  0%    {color: #291b25}
-  25%   {color: #f6f6e9}
-  50%   {color: #291b25}
-  75%   {color: #f6f6e9}
-  100%  {color: #291b25} 
+  0%    { color: #291b25 }
+  25%   { color: #f6f6e9 }
+  50%   { color: #291b25 }
+  75%   { color: #f6f6e9 }
+  100%  { color: #291b25 } 
 }
 
 @media only screen and (max-width: 800px) {
   .title {
-    font-size: 80px;
+    font-size: 60px;
   }
   .title-dev {
     margin: 2em 0;
   }
-  .title-dev:nth-of-type(2) {
+  .title-dev {
     flex-direction: column;
   }
 }
