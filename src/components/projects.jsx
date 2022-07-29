@@ -1,9 +1,9 @@
 import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
 import './styles/projects.css'
 import img from './images/mangaca-icon.png'
+import dictionary from './images/dictionary.png';
 
 const projects = [
     {
@@ -57,6 +57,24 @@ const projects = [
             cardComponent: {
                 title: 'Music App',
                 description: 'Song player app made with Vue JS'
+            }
+        }
+    },
+    {
+        link: 'https://dictionary-app-omega.vercel.app',
+        card: {
+            sx: { width: '20em', borderRadius: 10, m: '1.5em' },
+            div: {
+                class: 'img4',
+                img: {
+                    src: dictionary,
+                    alt: 'dictionary-app-icon',
+                    widthandheigh: '100'
+                }
+            },
+            cardComponent: {
+                title: 'Dictionary App',
+                description: 'Search any word and find about their definition'
             }
         }
     }
