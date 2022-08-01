@@ -6,24 +6,24 @@ import img from './images/mangaca-icon.png'
 import dictionary from './images/dictionary.png';
 
 const projects = [
-    {
-        link: 'https://weather-app-tia-cin.vercel.app',
-        card: {
-            sx: { width: '20em', borderRadius: 10, m: '1.5em' },
-            div: {
-                class: 'img1',
-                img: {
-                    src: 'https://cdn3.iconfinder.com/data/icons/climate-iconset/40/Cloudy-256.png',
-                    alt: 'cloud-icon',
-                    widthandheigh: '100'
-                }
-            },
-            cardComponent: {
-                title: 'Weather App',
-                description: 'Real time weather information about any city in the world'
-            }
-        }
-    },
+    // {
+    //     link: 'https://weather-app-tia-cin.vercel.app',
+    //     card: {
+    //         sx: { width: '20em', borderRadius: 10, m: '1.5em' },
+    //         div: {
+    //             class: 'img1',
+    //             img: {
+    //                 src: 'https://cdn3.iconfinder.com/data/icons/climate-iconset/40/Cloudy-256.png',
+    //                 alt: 'cloud-icon',
+    //                 widthandheigh: '100'
+    //             }
+    //         },
+    //         cardComponent: {
+    //             title: 'Weather App',
+    //             description: 'Real time weather information about any city in the world'
+    //         }
+    //     }
+    // },
     {
         link: 'https://deploy-client-kappa.vercel.app/',
         card: {
